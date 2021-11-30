@@ -35,7 +35,6 @@ export default {
   methods: {
     toggleActive(index) {
       let item = this.gallery[index];
-      console.log("item:", item);
       item.active = !item.active;
       Vue.set(this.gallery, index, item);
     },
